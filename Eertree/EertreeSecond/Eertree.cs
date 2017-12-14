@@ -4,7 +4,6 @@
     {
         private readonly Node _fictive = new Node(-1);
         private readonly Node _empty = new Node(0);
-        private Node T; // T is the largest proper palindrome suffix for the current prefix
 
         public Eertree()
         {
@@ -17,7 +16,7 @@
             var longestPalindromeEnd = -1;
             var length = 0; // by default, the longest palindromic substring is the empty string
             
-            T = _empty; 
+            var T = _empty;  // T is the largest proper palindrome suffix for the current prefix
             
             for (var i = 0; i < s.Length; i++)
             {
@@ -45,8 +44,7 @@
                     newNode = new Node(current.Length + 2);
                     current.Edges[s[i]] = newNode;
                 }
-                // now find the largest proper palindrome suffix for the new node
-                // palindrome
+                // now find the largest proper palindrome suffix for the new node palindrome
 
                 if (current == _fictive)
                 {

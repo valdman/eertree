@@ -1,10 +1,4 @@
-﻿/* Imaginary String is a special node, with a different behaviour from the standard PalindromeNode:
- - index fixed
- - palindrome length -1
- - autoloop as the longest palindrome suffix reference
- */
-
-namespace Application.EerTreeFirst
+﻿namespace Application.EerTreeFirst
 {
     public class ImaginaryStringPalindromeNode : PalindromeNode
     {

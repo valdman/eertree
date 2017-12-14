@@ -9,9 +9,6 @@ namespace Application.EerTreeFirst
         public int Index { get; set; }
         public virtual PalindromeNode LongestPalindromeSuffix { get; set; }
         
-        //Outgoing nodes representing the palindromes xAx that can be obtained adding a letter x to the current PalindromeNode A
-        //(If the current PalindromeNode
-
         public Dictionary<char, PalindromeNode> OutgoingNodes { get; set; } = new Dictionary<char, PalindromeNode>();
 
         protected internal PalindromeNode(int index)
@@ -22,11 +19,6 @@ namespace Application.EerTreeFirst
         public virtual bool IsImaginaryStringPalindromeNode => false;
 
         public virtual int GetPalindromeLength => Label.Length;
-
-
-        /**
-         * Not required by the algorithm, it is just for outputting the Eertree in a human-friendly fashion
-         */
 
         public override string ToString()
         {

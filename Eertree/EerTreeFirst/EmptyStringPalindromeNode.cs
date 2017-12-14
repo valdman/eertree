@@ -1,8 +1,4 @@
-﻿/**
- * Empty String is a special node whose suffix is always the imaginary string, and whose index fixed
- */
-
-namespace Application.EerTreeFirst
+﻿namespace Application.EerTreeFirst
 {
     public sealed class EmptyStringPalindromeNode : PalindromeNode
     {
