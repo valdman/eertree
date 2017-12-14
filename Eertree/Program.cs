@@ -1,4 +1,5 @@
 ﻿using System;
+using Eertree.EertreeSecond;
 
 namespace Eertree
 {
@@ -6,9 +7,9 @@ namespace Eertree
     {
         static void Main(string[] args)
         {
-            var str = "eskee";
-            var eertree = new EerTreeStructure.Eertree(str);
-            Console.WriteLine(eertree);
+            var str = Console.ReadLine();
+            var palindromic = new PalindromicTree();
+            Console.WriteLine(palindromic.LongestPalindromeSubstring(str));
         }
     }
 }
