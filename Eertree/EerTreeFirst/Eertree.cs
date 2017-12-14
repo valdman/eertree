@@ -1,9 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using static Eertree.EerTreeStructure.EmptyStringPalindromeNode;
 
-namespace Eertree.EerTreeStructure
+namespace Application.EerTreeFirst
 {
     public class Eertree
     {
@@ -83,7 +82,7 @@ namespace Eertree.EerTreeStructure
             //suffix reference to imaginary string is not allowed, change it to the empty string
             if (longestPalindromePrefix.IsImaginaryStringPalindromeNode)
             {
-                newNode = _tree[INDEX_EMPTY_STRING];
+                newNode = _tree[EmptyStringPalindromeNode.INDEX_EMPTY_STRING];
             }
             else
             {

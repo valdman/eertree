@@ -4,7 +4,7 @@
  - autoloop as the longest palindrome suffix reference
  */
 
-namespace Eertree.EerTreeStructure
+namespace Application.EerTreeFirst
 {
     public class ImaginaryStringPalindromeNode : PalindromeNode
     {

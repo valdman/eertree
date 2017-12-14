@@ -1,15 +1,16 @@
 ﻿using System;
-using Eertree.EertreeSecond;
+using Application.EertreeSecond;
 
-namespace Eertree
+namespace Application
 {
     class Program
     {
         static void Main(string[] args)
         {
-            var str = Console.ReadLine();
-            var palindromic = new PalindromicTree();
-            Console.WriteLine(palindromic.LongestPalindromeSubstring(str));
+            var str = "eertree";
+            var palindromic = new Eertree();
+            var longestPalindrome = palindromic.LongestPalindromeSubstring(str);
+            Console.WriteLine(longestPalindrome);
         }
     }
 }

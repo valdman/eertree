@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Eertree.EerTreeStructure
+namespace Application.EerTreeFirst
 {
     public class PalindromeNode
     {

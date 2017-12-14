@@ -2,7 +2,7 @@
  * Empty String is a special node whose suffix is always the imaginary string, and whose index fixed
  */
 
-namespace Eertree.EerTreeStructure
+namespace Application.EerTreeFirst
 {
     public sealed class EmptyStringPalindromeNode : PalindromeNode
     {

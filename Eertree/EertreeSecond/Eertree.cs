@@ -1,11 +1,12 @@
-﻿namespace Eertree.EertreeSecond
+﻿namespace Application.EertreeSecond
 {
-    public class PalindromicTree
+    public class Eertree
     {
         private readonly Node _fictive = new Node(-1);
         private readonly Node _empty = new Node(0);
+        private Node T; // T is the largest proper palindrome suffix for the current prefix
 
-        public PalindromicTree()
+        public Eertree()
         {
             _empty.SuffixLink = _fictive;
             _fictive.SuffixLink = _fictive;
@@ -16,7 +17,7 @@
             var longestPalindromeEnd = -1;
             var length = 0; // by default, the longest palindromic substring is the empty string
             
-            var T = _empty; // T is the largest proper palindrome suffix for the current prefix
+            T = _empty; 
             
             for (var i = 0; i < s.Length; i++)
             {
